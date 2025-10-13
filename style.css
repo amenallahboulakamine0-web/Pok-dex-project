@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #7fd3d2, #ffb3b3);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  padding-top: 70px; 
+}
+h1 {
+  display: table;
+  font-size: 2rem;
+  padding: 10px 40px; 
+  background: rgba(23, 228, 163, 0.95); 
+  border-radius: 10px; 
+  color: #fff;
+  margin:   auto;
+  background: linear-gradient(270deg, #7fd3d2, #ffb3b3, #f3e417, #7fd3d2);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+
+h2{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
+@keyframes gradientBG {
+  0% { background-position:0% 50% }
+  50% { background-position:100% 50% }
+  100% { background-position:0% 50% }
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.card img {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+#team .card img {
+  width: 60px;
+}
+
+#team {
+  min-height: 100px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.stats-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.stats-card img {
+  width: 150px;
+}
+
+.type-badge {
+  display:inline-block;
+  margin:0 5px 5px 0;
+  padding:5px 10px;
+  border-radius:999px;
+  background:#ffc107;
+  color:#212529;
+  font-weight:600;
+  text-transform: capitalize;
+}
+
+.stat-row { display:flex; justify-content: space-between; margin-bottom:6px; }
+.stat-name { text-transform: uppercase; color: #555; font-size:0.85rem; }
+
+.evo-list {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.evo-card {
+  background: #fbef86f3;
+  border-radius: 10px;
+  padding:5px 10px;
+  text-align:center;
+  cursor:pointer;
+  transition: transform 0.12s;
+}
+.evo-card:hover { transform: translateY(-5px); }
+.evo-card img { width:70px; height:70px; display:block; margin:auto 0 5px;}
