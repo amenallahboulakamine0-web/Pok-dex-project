@@ -1,7 +1,7 @@
 # Pokédex Web App
 
 ## Description
-An interactive web application that fetches Pokémon data from an API and displays it dynamically using HTML, CSS, and JavaScript.  
+An interactive website that fetches Pokémon data from an API and displays it dynamically using HTML, CSS, and JavaScript.  
 Designed to be responsive for mobile and desktop devices, focusing on usability and clean design.
 
 ## Technologies Used
