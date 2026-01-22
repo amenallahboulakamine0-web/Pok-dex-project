@@ -7,7 +7,7 @@ const teamDiv = document.getElementById("team");
 let pokemons = [];
 let team = JSON.parse(localStorage.getItem("team")) || [];
 
-fetch(`${baseUrl}pokemon?limit=650`)
+fetch(`${baseUrl}pokemon?limit=450`)
   .then(res => res.json())
   .then(data => {
     const promises = data.results.map(p => fetch(p.url).then(res => res.json()));
@@ -90,3 +90,4 @@ function loadTypes(){
     typeFilter.appendChild(opt);
   });
 }
+
